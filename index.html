@@ -1,9 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header__inner">
+          <div class="name">
+            <h1>
+              Ярослав <br />
+              Маковеев
+            </h1>
+            <p>Начинающий фронтенд-разработчик.</p>
+            <a href="#projects">
+              <button>Посмотреть проекты</button>
+            </a>
+          </div>
+          <div class="photo">
+            <img src="./assets/photo.jpg" alt="photo" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="main__inner">
+          <h1 class="about__me__header">О себе</h1>
+          <div class="about__me">
+            <div class="about__me__content">
+              <p>
+                Привет! Я фронтенд-разработчик, который любит превращать идеи в
+                работающие интерфейсы. Получил образование в ВлГУ по направлению
+                «Разработка веб- и мультимедийных приложений» и с тех пор
+                прокачиваю навыки в JavaScript, React, HTML, CSS и Figma. <br />
+                Моя цель — создавать интерфейсы, которые решают задачи и делают
+                жизнь пользователя проще. Сейчас сосредоточен на глубоком
+                изучении React и хочу освоить React-Redux, чтобы поднимать
+                проекты на новый уровень.
+              </p>
+            </div>
+            <div class="about__me__skills">
+              <div class="first__skill__row">
+                <div class="skill__card">
+                  <img src="./assets/Html5.svg" alt="html" />
+                </div>
+                <div class="skill__card">
+                  <img src="./assets/Css3.svg" alt="css" />
+                </div>
+              </div>
+              <div class="second__skill__row">
+                <div class="skill__card">
+                  <img src="./assets/Javascript.svg" alt="js" />
+                </div>
+                <div class="skill__card">
+                  <img src="./assets/React.svg" alt="react" />
+                </div>
+                <div class="skill__card">
+                  <img src="./assets/Figma.svg" alt="figma" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="my__projects" id="projects">
+            <h1 class="my__projects__header">Проекты</h1>
+            <div class="project__cards">
+              <div class="project__card">
+                <img src="./assets/dogsapi.png" alt="dogs" />
+                <h1>The Dogs API</h1>
+                <p>
+                  Поиск собак через The Dogs API. Избранное с сохранением в
+                  LocalStorage. React + React Router DOM + CSS. Деплой на GitHub
+                  Pages.
+                </p>
+
+                <button class="git__button" id="dogGit">
+                  Исходный код на GitHub
+                </button>
+                <button class="demo__button" id="dogDemo">
+                  Посмотреть демо
+                </button>
+              </div>
+              <div class="project__card">
+                <img src="./assets/fakestoreapi.png" alt="" />
+                <h1>Fake Store API</h1>
+                <p>
+                  Фильтрация товаров, работа с корзиной и сохранение в
+                  LocalStorage. React + React Router DOM + React-Bootstrap.
+                  Деплой на GitHub Pages.
+                </p>
+                <button class="git__button" id="storeGit">
+                  Исходный код на GitHub
+                </button>
+                <button class="demo__button" id="storeDemo">
+                  Посмотреть демо
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer__inner">
+          <h1 class="footer__contacts">Контакты</h1>
+          <div class="contacts">
+            <a href="https://t.me/+79011943319" class="tg">
+              <img src="./assets/TelegramFill.svg" alt="tg" />
+            </a>
+            <a href="mailto:y-makoveev@mail.ru" class="email">
+              <img src="./assets/EmailSolid.svg" alt="email" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
 </html>
